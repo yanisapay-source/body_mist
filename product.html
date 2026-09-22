@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="เลือกกลิ่นหอมจาก Body Scent ให้เข้ากับทุกอารมณ์ของคุณ">
+  <title>Products — Body Scent</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="index.html" aria-label="Body Scent หน้าหลัก">
+          Body Scent
+          <span class="brand__subtext">Fragrance Studio</span>
+        </a>
+
+        <nav class="nav" aria-label="เมนูหลัก">
+          <a href="index.html">หน้าหลัก</a>
+          <a href="product.html" aria-current="page">สินค้าทั้งหมด</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-intro">
+        <div class="container">
+          <p class="eyebrow">The collection</p>
+          <h1 class="page-intro__title">Find your signature scent.</h1>
+          <p class="page-intro__description">
+            สำรวจคอลเลกชันกลิ่นหอมของ Body Scent
+            แล้วเลือกกลิ่นที่เข้ากับความรู้สึกของคุณ
+          </p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="product-heading">
+        <div class="container">
+          <div class="filter-layout">
+            <div class="stack-xs">
+              <p class="eyebrow">Shop by mood</p>
+              <h2 id="product-heading">Our products</h2>
+            </div>
+
+            <div id="filter-bar" aria-label="ตัวกรองสินค้า">
+              <!-- script.js จะสร้างปุ่มกรองตรงนี้ -->
+            </div>
+          </div>
+
+          <div id="product-list" class="product-grid" aria-live="polite">
+            <!-- script.js จะสร้างการ์ดสินค้าตรงนี้ -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer__bottom">
+          <span>© <span data-current-year>2026</span> Body Scent</span>
+          <span>Your Scent, Your Mood</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
